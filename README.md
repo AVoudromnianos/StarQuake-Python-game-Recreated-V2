@@ -30,6 +30,6 @@
 - [ ] New map
 
 ## Disclaimer: Remaster of the Starquake game.
-  My colleague and me remastered it using our knowledge in python language and photoshop for learning and fun purposes..
+  My colleague(https://github.com/gioiliop7) and me remastered it using our knowledge in python language and photoshop for learning and fun purposes..
   
   Τhe original game is written by Stephen Crow and published by Bubble Bus Software in 1985.
