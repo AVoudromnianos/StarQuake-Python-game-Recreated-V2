@@ -29,7 +29,7 @@
 - [ ] Bullet - Wall collision
 - [ ] New map
 
-## Disclaimer: Recreation of the Starquake game.
-  My colleague and me recreate it using our knowledge in python language and photoshop for learning and fun purposes..
+## Disclaimer: Remaster of the Starquake game.
+  My colleague and me remastered it using our knowledge in python language and photoshop for learning and fun purposes..
   
   Τhe original game is written by Stephen Crow and published by Bubble Bus Software in 1985.
