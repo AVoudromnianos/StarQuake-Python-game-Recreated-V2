@@ -7,7 +7,7 @@
   The planet is inhabited by various primitive creatures.
   
 ## MAP
-  |Map 1 (Entry map)-->|<-- Map 2 -->|<--Map 3-->|<--Map4-->|<--Map 5|
+  |Map 1 (Entry map)-->|<-- Map 2 -->|<-- Map 3 -->|<-- Map 4 -->|<-- Map 5|
   |:------:|:------:|:-----:|:------:|:-----:|
   |----|------|Down|----|---|
   |-----|-----|Map 6|----|---|
@@ -15,9 +15,9 @@
   |-----|-----|Map 7|----|---|
   |-----|-----|Down|----|---|
   |Map 15|<-->|Map 8|<-->|Map 9|
-  |Up/Down|--------|Down|----|Down/Up|
-  |Map 14|----|Down|----|Map 10|
-  |Up/Down|------|Down|----|Down/Up|
+  |Up/Down|--------|----|----|Down/Up|
+  |Map 14|--------|----|Map 10|
+  |Up/Down|------|----|----|Down/Up|
   |Map 13|<-->|Map 12|<-->|Map 11|
   
 ## Controls
