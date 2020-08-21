@@ -6,10 +6,6 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 PURPLE = (255, 0, 255)
 
-Eikona1 = pygame.sprite.Group()
-Eikona2 = pygame.sprite.Group()
-Eikona3 = pygame.sprite.Group()
-
 class Room(object):
     """ Base class for all rooms. """
 
@@ -26,8 +22,6 @@ class Room(object):
 class Room1(Room):
     """This creates all the walls in room 1"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
-    
     # This is a list of walls. Each is in the form [x, y, width, height]
     game_map1 = """---------------
 m-m-------------m---
@@ -49,20 +43,16 @@ kkkkkkkkkkkkkkkkkkkk""".splitlines()
 
     tl = {}
     tl["p"] = pygame.image.load('square_purple.png')
-   # Eikona1.add(mov_img)
     tl["m"] = pygame.image.load('square_blue.png')
-    #Eikona2.add(mple_img)
     tl["k"] = pygame.image.load('square_yellow.png')
-   #Eikona3.add(kitrino_img)
 
 
 class Room2(Room):
-    """This creates all the walls in room 2"""
     
     game_map2 = """
 d------------------d
 d------------------d
-d------rrrr--------d
+drrrrrrrrrrdddrrrrrd
 dr---bb-----bbbrrrrd
 d-----------------dd
 d-----rbr--------rdd
@@ -87,9 +77,7 @@ rrrrrrrrrrrrrrrrrrrr
 
 
 class Room3(Room):
-    """This creates all the walls in room 3"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map3 = """
 --------------------
 --------------------
@@ -97,8 +85,8 @@ baaaaaaaaaaaaaaaaaaa
 bb--o-----a--------b
 bm----------------ab
 bm----bbbb--------ab
-b-----aaaaaam-----bb
-b----aaaammmma----bb
+b----aaaaaaam-----bb
+b---aaaaammmma----bb
 b--------------aa-bb
 baaaaaa---aa------bb
 bm-----------aa--bbb
@@ -111,17 +99,12 @@ aaaaaaaaaaaaaaaa-aaa
 
     tl = {}
     tl["b"] = pygame.image.load('flower_blue.png')
-  #  Eikona1.add(lb_img)
     tl["m"] = pygame.image.load('flower_purple.png')
-   # Eikona2.add(lm_img)
     tl["a"] = pygame.image.load('flower_white.png')
-   # Eikona3.add(la)
     tl["e"] = pygame.image.load('exit.png')
 
 class Room4(Room):
-    """This creates all the walls in room 1"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map4 = """
 --------------------
 --------------------
@@ -142,17 +125,12 @@ pppppppppppppppppppp""".splitlines()
 
     tl = {}
     tl["k"] =  pygame.image.load('polygon_yellow.png')
-   # Eikona1.add(mov_img)
     tl["m"] =  pygame.image.load('polygon_blue.png')
-    #Eikona2.add(mple_img)
     tl["p"] =  pygame.image.load('polygon_blue2.png')
-   #Eikona3.add(kitrino_img)
     tl["o"] =  pygame.image.load('polygon_red.png')
 
 class Room5(Room):
-    """This creates all the walls in room 3"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map5 = """
 c-------------------
 t------------------c
@@ -178,10 +156,8 @@ cccccccccccccccccccc
     tl["h"] =  pygame.image.load('generator.png')
 
 class Room6(Room):
-    """This creates all the walls in room 3"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
-    game_map6 = """aaa----------------a
+    game_map6 = """aaa------------a-aaa
 aaa----------------a
 a-----------------aa
 a------rrrr--------a
@@ -202,14 +178,12 @@ rrrrrrrrrrrrrrrrr--r
 
     tl = {}
     tl["r"] =  pygame.image.load('stalactite_red.png')
-    tl["b"] = pygame.image.load('stalactite_blue.png')
+    tl["b"] =  pygame.image.load('stalactite_blue.png')
     tl["d"] =  pygame.image.load('stalactite_red2.png')
     tl["a"] =  pygame.image.load('stalactite_blue2.png')
 
 class Room7(Room):
-    """This creates all the walls in room 3"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map7 = """s------------------s
 s------------------s
 ssssssssssssssss---s
@@ -230,15 +204,13 @@ qqqqsssxxqqsxsxqx--s
     game_map = [list(lst) for lst in game_map7]
 
     tl = {}
-    tl["s"]  = pygame.image.load('lines_yellow.png')
+    tl["s"] = pygame.image.load('lines_yellow.png')
     tl["x"] = pygame.image.load('lines_purple.png')
     tl["q"] = pygame.image.load('lines_red.png')
 
 
 class Room8(Room):
-    """This creates all the walls in room 3"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map8 = """s------------------s
 s--------------s--ss
 s--------------s---s
@@ -264,9 +236,7 @@ qqqqsssxxqqsxsxqxqqs
     tl["q"] =  pygame.image.load('lines_red.png')
     
 class Room9(Room):
-    """This creates all the walls in room 1"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map9 = """
 mm-----------------m
 mm-----------------m
@@ -293,9 +263,7 @@ mk-mkpmkpmkpmkpmkpmk
 
 
 class Room10(Room):
-    """This creates all the walls in room 10"""
 
-    # This is a list of walls. Each is in the form [x, y, width, height]
     game_map10 = """a-----------------a
 a-------------------
 a-------------------
@@ -316,17 +284,13 @@ b-bbbbbbbbbbbbbbbbbb
     game_map = [list(lst) for lst in game_map10]
 
     tl = {}
-    tl["b"] = lb_img = pygame.image.load('flower_blue.png')
-  #  Eikona1.add(lb_img)
-    tl["m"] = lm_img = pygame.image.load('flower_purple.png')
-   # Eikona2.add(lm_img)
-    tl["a"] = la = pygame.image.load('flower_white.png')
+    tl["b"] = pygame.image.load('flower_blue.png')
+    tl["m"] = pygame.image.load('flower_purple.png')
+    tl["a"] = pygame.image.load('flower_white.png')
 
 
 class Room11(Room):
-    """This creates all the walls in room 2"""
-
-    # This is a list of walls. Each is in the form [x, y, width, height]
+ 
     game_map11 = """a-----------------a
 d-d----------------bd
 d-d-------------bb-d
@@ -336,9 +300,9 @@ d----rr------------d
 ------bbr--------rdd
 -------------z-----d
 -----rrryy---------d
-d------------------d
+-------------------d
 dbb--------z-------d
--------------rr----d
+d------------rr----d
 ----rbr--------rr--d
 -------------------d
 rrrrrrrrrrbrbrbrbbbr
@@ -347,16 +311,14 @@ rrrrrrrrrrbrbrbrbbbr
     game_map = [list(lst) for lst in game_map11]
 
     tl = {}
-    tl["r"] = dirt_img = pygame.image.load('stalactite_red.png')
-    tl["b"] = grass_img = pygame.image.load('stalactite_blue.png')
-    tl["d"] = grass_img = pygame.image.load('stalactite_red2.png')
-    tl["a"] = grass_img = pygame.image.load('stalactite_blue2.png')
-    tl["z"] = grass_img = pygame.image.load('generator.png')
+    tl["r"] =  pygame.image.load('stalactite_red.png')
+    tl["b"] =  pygame.image.load('stalactite_blue.png')
+    tl["d"] =  pygame.image.load('stalactite_red2.png')
+    tl["a"] =  pygame.image.load('stalactite_blue2.png')
+    tl["z"] =  pygame.image.load('generator.png')
 
 class Room12(Room):
-    """This creates all the walls in room 2"""
-
-    # This is a list of walls. Each is in the form [x, y, width, height]
+ 
     game_map12 = """
 d------------------d
 d------------------d
@@ -377,44 +339,44 @@ dddddddddddddddddddd
     game_map = [list(lst) for lst in game_map12]
 
     tl = {}
-    tl["r"] = dirt_img = pygame.image.load('stalactite_red.png')
-    tl["b"] = grass_img = pygame.image.load('stalactite_blue.png')
-    tl["d"] = grass_img = pygame.image.load('stalactite_red2.png')
-    tl["a"] = grass_img = pygame.image.load('stalactite_blue2.png')
-    tl["z"] = grass_img = pygame.image.load('generator.png')
+    tl["r"] =  pygame.image.load('stalactite_red.png')
+    tl["b"] =  pygame.image.load('stalactite_blue.png')
+    tl["d"] =  pygame.image.load('stalactite_red2.png')
+    tl["a"] =  pygame.image.load('stalactite_blue2.png')
+    tl["z"] =  pygame.image.load('generator.png')
     
 class Room13(Room):
 
     game_map13 = """q------------------s
-q-----------------ss
-q---------------xsss
+qq----------------ss
+q--q------------xsss
 ss-----------------s
 ss--xxx-----sss----x
 x--s----------------
-x--xxs-----------xx-
+x--xxs--x--------xx-
 s--------ss---------
-x------xx-----------
+x------xx---x-------
 q------------------s
-qq-ss-------------ss
-q------sx---------sq
+qq-ss----------x--ss
+q------sx---x-------
 q---ssq----s--q-----
-q-------------------
-----sssxxqqsxsxqxqqs
+q------------------s 
+sssssssxxqqsxsxqxqqs
         """.splitlines()
 
     game_map = [list(lst) for lst in game_map13]
 
     tl = {}
-    tl["s"] = dirt_img = pygame.image.load('lines_yellow.png')
-    tl["x"] = grass_img = pygame.image.load('lines_purple.png')
-    tl["q"] = grass_img = pygame.image.load('lines_red.png')
+    tl["s"] =  pygame.image.load('lines_yellow.png')
+    tl["x"] =  pygame.image.load('lines_purple.png')
+    tl["q"] =  pygame.image.load('lines_red.png')
     
 class Room14(Room):
 
     game_map14 = """s------------------s
-s-------------------
 s------------------s
-ss----------------ss
+ss-----------------s
+sss---------------ss
 ss--xxx-----sss----x
 x--s----xxx--------x
 x----xxs---------xxx
@@ -431,9 +393,9 @@ q--ssssxxqqsxsxqxq-s
     game_map = [list(lst) for lst in game_map14]
 
     tl = {}
-    tl["s"] = dirt_img = pygame.image.load('lines_yellow.png')
-    tl["x"] = grass_img = pygame.image.load('lines_purple.png')
-    tl["q"] = grass_img = pygame.image.load('lines_red.png')
+    tl["s"] = pygame.image.load('lines_yellow.png')
+    tl["x"] = pygame.image.load('lines_purple.png')
+    tl["q"] = pygame.image.load('lines_red.png')
 
 class Room15(Room):
 
@@ -457,7 +419,7 @@ q--ssssxxqqsxsxqxqqs
     game_map = [list(lst) for lst in game_map15]
 
     tl = {}
-    tl["s"] = dirt_img = pygame.image.load('lines_yellow.png')
-    tl["x"] = grass_img = pygame.image.load('lines_purple.png')
-    tl["q"] = grass_img = pygame.image.load('lines_red.png')
+    tl["s"] = pygame.image.load('lines_yellow.png')
+    tl["x"] = pygame.image.load('lines_purple.png')
+    tl["q"] = pygame.image.load('lines_red.png')
 
