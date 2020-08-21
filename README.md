@@ -7,7 +7,7 @@
   The planet is inhabited by various primitive creatures.
   
 ## MAP
-  |Map 1 (Entry map)-->| Map 2 -->|Map 3-->|Map4-->|Map 5-->|
+  |Map 1 (Entry map)-->|<-- Map 2 -->|<--Map 3-->|<--Map4-->|<--Map 5|
   |:------:|:------:|:-----:|:------:|:-----:|
   |----|------|Down|----|---|
   |-----|-----|Map 6|----|---|
