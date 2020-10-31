@@ -34,16 +34,6 @@
   1. Download all the files.
   2. Put it all in one folder.
   3. Run StarQuake-Game.py with IDE like Spyder,PyCharm etc
-  
-## Things TODO:
-
-- [x] Music
-- [x] Rooms transfer bug
-- [ ] Game run from .exe
-- [ ] Monsters appear only at an opposite or random position of you in the map
-- [ ] Bullet - Wall collision
-- [ ] New map
-
 
 ## Disclaimer: Remaster of the Starquake game.
   My colleague(https://github.com/gioiliop7) and me recreated it using our knowledge in python language and photoshop for learning and fun purposes..
