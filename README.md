@@ -36,6 +36,6 @@
   3. Run StarQuake-Game.py with IDE like Spyder,PyCharm etc
 
 ## Disclaimer: Remaster of the Starquake game.
-  My colleague(https://github.com/gioiliop7) and me recreated it using our knowledge in python language and photoshop for learning and fun purposes..
+  My colleague(https://github.com/gioiliop7) and i recreated it, using our knowledge in python language and photoshop for learning and fun purposes..
   
   Τhe original game is written by Stephen Crow and published by Bubble Bus Software in 1985.
